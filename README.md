@@ -109,6 +109,11 @@ Place where you can see labs for Data managment using PostgreSQL
 - StatusID (Primary Key, INT): Уникальный идентификатор статуса.
 - StatusName (VARCHAR): Название статуса.
 
+### Таблица LicenseRegions (Регион(ы) на котор(ый/ые) распространен(а/ы) лицензия):
+- RegionID (Primary Key, INT): Уникальный идентификатор региона.
+- RegionName (VARCHAR): Название региона.
+- Description (TEXT): Описание региона.
+
 ### Таблица LicenseSuspensions (Приостановка действия лицензии):
 - SuspensionID (Primary Key, INT): Уникальный идентификатор приостановления.
 - StartDate (DATE): Дата начала приостановления.
@@ -116,8 +121,3 @@ Place where you can see labs for Data managment using PostgreSQL
 - Reason (TEXT): Причина приостановления.
 - Notes (TEXT): Примечания по приостановлению.
 - LicenseID (Foreign Key, INT): Идентификатор приостановленной лицензии.
-
-### Таблица LicenseRegions (Регион(ы) на котор(ый/ые) распространен(а/ы) лицензия):
-- RegionID (Primary Key, INT): Уникальный идентификатор региона.
-- RegionName (VARCHAR): Название региона.
-- Description (TEXT): Описание региона.
